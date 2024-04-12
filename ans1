@@ -1,0 +1,14 @@
+---
+- name: learning ansible
+  hosts: localhost
+  become: true
+
+  tasks: 
+    - name: adding user
+      user:
+        name: myuser1
+        state: present  
+    - name: adding group............
+      group:
+        name: mygrp1
+        state: present 
