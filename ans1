@@ -2,6 +2,8 @@
 - name: learning ansible
   hosts: localhost
   become: true
+  become_method: sudo
+  become_user: privileged_user
 
   tasks: 
     - name: adding user
